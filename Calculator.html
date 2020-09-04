@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function raqam(r) {
+            var inp = document.getElementById('m');
+            inp.value = inp.value + r;
+        }
+
+        function raqam2(btn) {
+            var inp = document.getElementById('m');
+            inp.value = inp.value + btn.value;
+            document.getElementById("m").style.color = "blue";
+            navigator.vibrate(70);
+        }
+
+        function hisob() {
+            var r = document.getElementById("m");
+            r.value = eval(r.value);
+        }
+
+        function tozala() {
+            var inp = document.getElementById("m");
+            inp.value = " ";
+        }
+
+        function afon(rang) {
+            document.getElementById("sayt").style.backgroundColor = rang;
+        }
+    </script>
+    <style>
+        body {
+            padding-left: 520px;
+            padding-top: 50px;
+        }
+        
+        #sayt {
+            padding-top: 10px;
+            background-color: black;
+            width: 310px;
+            height: 380px;
+            border-radius: 15px;
+        }
+        
+        [name=matn] {
+            width: 290px;
+            height: 60px;
+            background-color: whitesmoke;
+            border-radius: 15px;
+        }
+        
+        #m {
+            font-size: x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+        }
+        
+        [name=q] {
+            width: 70px;
+            height: 65px;
+            color: slateblue;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=min] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=k] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=b] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=t] {
+            width: 145px;
+            height: 45px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: red;
+            border-radius: 15px;
+        }
+        
+        [name=qa] {
+            width: 68px;
+            height: 48px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=qavs] {
+            width: 68px;
+            height: 48px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            border-radius: 15px;
+        }
+        
+        [name=yetti] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=sakkiz] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=toqqiz] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=tort] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=besh] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=olti] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=bir] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=ikki] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=uch] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=nuqta] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=nol] {
+            width: 70px;
+            height: 65px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        
+        [name=teng] {
+            width: 70px;
+            height: 65px;
+            background-color: rgb(49, 209, 49);
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+            color: blue
+        }
+        
+        [name=yashil] {
+            width: 75px;
+            height: 40px;
+            background-color: green;
+            color: white;
+        }
+        
+        [name=kok] {
+            width: 75px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+        }
+        
+        [name=kulrang] {
+            width: 75px;
+            height: 40px;
+            background-color: grey;
+            color: white;
+        }
+        
+        [name=qora] {
+            width: 75px;
+            height: 40px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sayt" align="center">
+        <input type="text" name="matn" id="m" disabled> <br>
+        <button onclick="tozala()" name="t"> Clear</button>
+        <button onclick="raqam2(this)" name="qa" value="(">(</button>
+        <button onclick="raqam2(this)" name="qavs" value=")">)</button><br>
+
+
+
+        <button onclick="raqam2(this)" name="yetti" value="7">7</button>
+        <button onclick="raqam2(this)" name="sakkiz" value="8">8</button>
+        <button onclick="raqam2(this)" name="toqqiz" value="9">9</button>
+        <button onclick="raqam2(this)" name="q" value="+">+</button><br>
+
+        <button onclick="raqam2(this)" name="tort" value="4">4</button>
+        <button onclick="raqam2(this)" name="besh" value="5">5</button>
+        <button onclick="raqam2(this)" name="olti" value="6">6</button>
+        <button onclick="raqam2(this)" name="min" value="-">-</button><br>
+
+        <button onclick="raqam2(this)" name="bir" value="1">1</button>
+        <button onclick="raqam2(this)" name="ikki" value="2">2</button>
+        <button onclick="raqam2(this)" name="uch" value="3">3</button>
+        <button onclick="raqam2(this)" name="k" value="*">*</button><br>
+
+        <button onclick="raqam2(this)" name="nuqta" value=".">.</button>
+        <button onclick="raqam2(this)" name="nol" value="0">0</button>
+
+        <button onclick="hisob()" name="teng" value="=">=</button>
+        <button onclick="raqam2(this)" name="b" value="/">/</button><br>
+    </div>
+    <div id="fon">
+        <br>
+        <h3> Change the background color below</h3>
+        <form name="bfon">
+            <input type="button" name="yashil" value="Green" onclick="afon('green')">
+            <input type="button" name="kok" value="Blue" onclick="afon('blue')">
+            <input type="button" name="kulrang" value="Grey" onclick="afon('grey')">
+            <input type="button" name="qora" value="Black" onclick="afon('black')">
+        </form>
+    </div>
+</body>
+
+</html>
